@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Fundamentals Practice</h1>
+    </header>
+
+    <main>
+        <!-- Part 1: Basics -->
+        <section id="basics">
+            <h2>Part 1: JavaScript Basics</h2>
+            <div class="example">
+                <h3>Number Checker</h3>
+                <label for="numberInput">Enter a number:</label>
+                <input type="number" id="numberInput">
+                <button id="checkNumberBtn">Check Number</button>
+                <p id="numberResult"></p>
+            </div>
+        </section>
+
+        <!-- Part 2: Functions -->
+        <section id="functions">
+            <h2>Part 2: JavaScript Functions</h2>
+            <div class="example">
+                <h3>String Formatter</h3>
+                <label for="stringInput">Enter a string:</label>
+                <input type="text" id="stringInput">
+                <button id="formatStringBtn">Format String</button>
+                <p id="stringResult"></p>
+            </div>
+
+            <div class="example">
+                <h3>Temperature Converter</h3>
+                <label for="tempInput">Enter temperature:</label>
+                <input type="number" id="tempInput">
+                <select id="tempUnit">
+                    <option value="celsius">Celsius to Fahrenheit</option>
+                    <option value="fahrenheit">Fahrenheit to Celsius</option>
+                </select>
+                <button id="convertTempBtn">Convert</button>
+                <p id="tempResult"></p>
+            </div>
+        </section>
+
+        <!-- Part 3: Loops -->
+        <section id="loops">
+            <h2>Part 3: JavaScript Loops</h2>
+            <div class="example">
+                <h3>Multiplication Table</h3>
+                <label for="multiplicationNumber">Enter a number (1-10):</label>
+                <input type="number" id="multiplicationNumber" min="1" max="10">
+                <button id="generateTableBtn">Generate Table</button>
+                <div id="multiplicationTable"></div>
+            </div>
+
+            <div class="example">
+                <h3>Countdown Timer</h3>
+                <label for="countdownNumber">Enter seconds to count down:</label>
+                <input type="number" id="countdownNumber" min="1" max="60">
+                <button id="startCountdownBtn">Start Countdown</button>
+                <p id="countdownDisplay"></p>
+            </div>
+        </section>
+
+        <!-- Part 4: DOM Manipulation -->
+        <section id="dom">
+            <h2>Part 4: DOM Manipulation</h2>
+            <div class="example">
+                <h3>Theme Switcher</h3>
+                <button id="themeToggleBtn">Toggle Dark Mode</button>
+            </div>
+
+            <div class="example">
+                <h3>Dynamic List</h3>
+                <label for="listItemInput">Add item to list:</label>
+                <input type="text" id="listItemInput">
+                <button id="addItemBtn">Add Item</button>
+                <ul id="dynamicList"></ul>
+            </div>
+
+            <div class="example">
+                <h3>Element Creator</h3>
+                <label for="elementType">Element type:</label>
+                <input type="text" id="elementType" placeholder="e.g., div, p, span">
+                <label for="elementText">Element text:</label>
+                <input type="text" id="elementText" placeholder="Text content">
+                <button id="createElementBtn">Create Element</button>
+                <div id="elementContainer"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
