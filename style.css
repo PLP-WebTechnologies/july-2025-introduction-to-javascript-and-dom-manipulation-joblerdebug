@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dark-mode section {
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+.example {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dark-mode .example {
+    border-color: #555;
+}
+
+button, input, select {
+    padding: 8px 12px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#multiplicationTable {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#multiplicationTable div {
+    padding: 5px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.dark-mode #multiplicationTable div {
+    background-color: #555;
+}
+
+#dynamicList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#dynamicList li {
+    padding: 8px;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark-mode #dynamicList li {
+    background-color: #555;
+}
+
+#dynamicList li button {
+    background-color: #dc3545;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+#dynamicList li button:hover {
+    background-color: #a71d2a;
+}
+
+#elementContainer {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    min-height: 50px;
+}
+
+.dark-mode #elementContainer {
+    border-color: #666;
+}
